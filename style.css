@@ -68,12 +68,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 7% 4% 4%;
+  padding: 8% 4% 4%;
   /* padding-top: 7%; */
   background-color: #3B5671;
 }
 #first .row .col-md-4 img {
   max-width: 80%;
+  padding-top: 3%;
 }
 #first .row .col-md-4 h4 {
   padding-top: 4%;
