@@ -13,6 +13,26 @@ body {
 .header {
   background-color: #244774;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+#right-side-nav-img img {
+  max-width: 100%;
+}
+#left-side-nav-content {
+  min-width: 60%;
+}
+#left-side-nav-content a {
+  text-decoration: none;
+  color: white;
+  /* padding: 0 0.5%; */
+  margin: 0 1%;
+  font-size: small;
+}
+#left-side-nav-content a:hover {
+  text-decoration: underline solid rgb(10, 186, 255);
+  color: rgb(10, 186, 255);
 }
 
 .fixed-top {
@@ -22,54 +42,7 @@ body {
   left: 0;
   margin-bottom: 1px;
 }
-.header .navigation {
-  position: relative;
-  align-items: center;
-  margin-left: 5%;
-}
-.header .navigation .logo {
-  padding-top: 3%;
-  position: absolute;
-  left: 0;
-  width: min-content
-}
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  padding: 2% 0;
-  transition: all .3s ease-out;
-}
-.nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: table;
-  height: 6rem;
-  display: flex;
-  height: min-content;
-}
-.right-side-nav .active a {
-    color: #53beed;
-    border-bottom: 3px solid #53beed;
-}
-.right-side-nav li {
-  height: fit-content;
-}
-.right-side-nav li a {
-    padding: 1rem;
-    display: block;
-    color: white;
-    text-decoration: none;
-    transition: all .3s ease-in-out;
-    backface-visibility: hidden;
-    cursor: pointer;
-    font-size: medium;
-}
-.right-side-nav li a:hover {
-  color: #007bff;
-}
+
 
 
 .fluid-container {
@@ -95,13 +68,18 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 4%;
-  padding-top: 10%;
+  padding: 7% 4% 4%;
+  /* padding-top: 7%; */
   background-color: #3B5671;
-  
+}
+#first .row .col-md-4 img {
+  max-width: 80%;
 }
 #first .row .col-md-4 h4 {
-  padding-top: 6%;
+  padding-top: 4%;
+}
+#first .row .col-md-4 p {
+  text-align: center;
 }
 
 .matter {
@@ -258,11 +236,12 @@ body {
   margin: 4%;
   margin-bottom: 5%;
   background-color: transparent;
-  color: white;
+  color: rgb(255, 255, 255);
   border: 0;
   border-bottom: 1px solid white;
   width: 90%;
   font-size: large;
+  font-style: normal;
 }
 #eight .row .col-md-7 form input:focus {
   outline: none;
